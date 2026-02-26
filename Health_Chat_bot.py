@@ -43,12 +43,12 @@ precautionDictionary = {}
 symptoms_dict = {symptom: idx for idx, symptom in enumerate(x)}
 
 def getDescription():
-    with open('MasterData/symptom_Description.csv') as csv_file:
+    with open('Master_data/symptom_Description.csv') as csv_file:
         for row in csv.reader(csv_file):
             description_list[row[0]] = row[1]
 
 def getSeverityDict():
-    with open('MasterData/symptom_severity.csv') as csv_file:
+    with open('Master_data/symptom_severity.csv') as csv_file:
         for row in csv.reader(csv_file):
             try:
                 severityDictionary[row[0]] = int(row[1])
@@ -56,7 +56,7 @@ def getSeverityDict():
                 pass
 
 def getprecautionDict():
-    with open('MasterData/symptom_precaution.csv') as csv_file:
+    with open('Master_data/symptom_precaution.csv') as csv_file:
         for row in csv.reader(csv_file):
             precautionDictionary[row[0]] = [row[1], row[2], row[3], row[4]]
 
