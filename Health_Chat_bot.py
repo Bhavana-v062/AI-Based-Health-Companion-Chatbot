@@ -43,7 +43,7 @@ precautionDictionary = {}
 
 def load_master_data():
     # Severity
-    with open(os.path.join(BASE_DIR, "Master_data", "Symptom_severity.csv")) as csv_file:
+    with open(os.path.join(BASE_DIR, "Master_data", "symptom_severity.csv")) as csv_file:
         for row in csv.reader(csv_file):
             try:
                 severityDictionary[row[0]] = int(row[1])
