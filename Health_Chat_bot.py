@@ -5,7 +5,7 @@ import numpy as np
 import csv
 from sklearn import preprocessing
 from sklearn.ensemble import RandomForestClassifier
-from sklearn-learn.model_selection import train_test_split
+from sklearn.model_selection import train_test_split
 from difflib import get_close_matches
 import warnings
 warnings.filterwarnings("ignore", category=DeprecationWarning)
